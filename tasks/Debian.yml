@@ -32,7 +32,7 @@
     - init
     - config
 
-- name: "Debian | Install gpg key"
+# - name: "Debian | Install gpg key"
   apt_key:
     id: "{{ sign_keys[zabbix_short_version][ansible_distribution_release]['sign_key'] }}"
     url: http://repo.zabbix.com/zabbix-official-repo.key
